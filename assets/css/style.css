@@ -1,64 +1,115 @@
 h1 {
-    text-align: center;
+  text-align: center;
 }
 
 #menu {
-    margin-top: 1rem;
-    text-align: center;
+  margin-top: 1rem;
+  text-align: center;
 }
 
 #new-round {
-    background-color: blueviolet;
-    color: yellow;
-    padding: 0.5rem 1rem;
-    border: 1px solid rgb(33, 2, 61);
-    border-radius: 15px;
-    font-weight: bold;
-    cursor: pointer;
+  background-color: blueviolet;
+  color: yellow;
+  padding: 0.5rem 1rem;
+  border: 1px solid rgb(33, 2, 61);
+  border-radius: 15px;
+  font-weight: bold;
+  cursor: pointer;
 }
 
 #new-round:hover {
-    background-color: rgba(139, 0, 139, 0.80);
+  background-color: rgba(139, 0, 139, 0.8);
 }
 
-.player-v2{
-    display: flex;
-    margin-bottom: 1rem;
+.player-v2 {
+  display: flex;
+  margin-bottom: 1rem;
 }
 
-.player-avatar{
-    border: 3px solid grey;
-    width: 5rem;
-    aspect-ratio: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-radius: 5px;
+.player-avatar {
+  border: 3px solid grey;
+  width: 5rem;
+  aspect-ratio: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
 }
 
-.player-avatar img{
-    width: 3rem;
+.player-avatar img {
+  width: 3rem;
 }
 
-.player-avatar h2{
-    font-size: 1rem;
-    margin: 0;
+.player-avatar h2 {
+  font-size: 1rem;
+  margin: 0;
 }
 
-.player-bar{
-    margin: 0 1rem;
-    border-radius: 5px;
+.player-bar {
+  margin: 0 1rem;
+  border-radius: 5px;
 }
 
-.player-score{
-    display: flex;
-    align-items: center;
-    font-weight: bold;
-    font-size: 1.25rem;
-    color: #333;
+.player-score {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.25rem;
+  color: #333;
 }
 
-.player-score span{
-    margin-right: 0.2rem;
+.player-score span {
+  margin-right: 0.2rem;
+}
+
+.podiumContainer {
+  border: 2px solid;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+#podium {
+  background-color: lightblue;
+  height: 25rem;
+  border: 2px solid;
+}
+
+.playerPodium img {
+  width: 4rem;
+  height: 4rem;
+}
+
+.podium {
+  border: 8px solid;
+  width: 14rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 2rem;
+  font-weight: bolder;
+}
+.p1 {
+  height: 7rem;
+}
+
+.p2 {
+  height: 4rem;
+}
+
+.p3 {
+  height: 3rem;
+}
+
+.playerPodium {
+  width: 14rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
 }

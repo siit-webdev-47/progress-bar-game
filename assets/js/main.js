@@ -1,10 +1,12 @@
 import { PlayerModel } from "./player-model.class.js";
 import { PlayerView } from "./player-view.class.js";
+import { DrawPodium } from "./podium.js";
 
 console.log('all good here');
 
 
 const playersContainer = document.querySelector('#players');
+const podiumContainer = document.querySelector("#podium");
 
 const newRoundBtn = document.querySelector('#new-round');
 newRoundBtn.addEventListener('click', newRound);
@@ -22,12 +24,16 @@ const pv3 = new PlayerView(p3, playersContainer);
 const p4 = new PlayerModel('Jerry', 'navy');
 const pv4 = new PlayerView(p4, playersContainer);
 
+const players = [p1, p2, p3, p4];
+const podium = new DrawPodium(players, podiumContainer);
 
 function newRound(){
     playerRound(p1, pv1);
     playerRound(p2, pv2);
     playerRound(p3, pv3);
     playerRound(p4, pv4);
+    
+    podium.renderScore();
 }
 
 function playerRound(playerModel, playerView){
