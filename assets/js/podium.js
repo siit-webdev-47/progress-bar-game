@@ -1,7 +1,8 @@
 export class DrawPodium{
     constructor(players, parentDomElem){
         this.players = players;
-        this.orderedPlayers = this.players;
+        this.orderedPlayers = [...this.players];
+
         const placeString = 'I';
 
         this.createComponent(parentDomElem);
@@ -23,7 +24,9 @@ export class DrawPodium{
     }
 
     renderScore(){
-        this.orderedPlayers = this.players.sort((a,b) => b.score - a.score);
+        this.orderedPlayers = this.orderedPlayers.sort((a,b) => b.score - a.score);
+        console.log(this.players);
+        console.log(this.orderedPlayers);
 
         for (let i = 1; i <= 3; i++) {
         eval(`this.p${i}NameSpan.textContent = this.orderedPlayers[${i-1}].name`);
